@@ -38,3 +38,10 @@ const setProgressAndStatus = (progressVal, statusMsg) => {
 //
 // Add your event handlers below.
 //
+
+// const button = document.querySelector('add-to-order');
+
+$('.add-to-order').on('click', () => {
+  addItemToCart('Coffee');
+  incrementCartTotal(1.50);
+});
