@@ -45,3 +45,8 @@ $('.add-to-order').on('click', () => {
   addItemToCart('Coffee');
   incrementCartTotal(1.50);
 });
+
+$('#place-order').on('click', () => {
+  incrementCoffeeSold($('#cart-items').children().length);
+  resetCart();
+});
